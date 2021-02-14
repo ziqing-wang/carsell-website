@@ -37,15 +37,16 @@ footer p {
     padding: 2rem;
 }
 
-#contact{
+#contact {
     margin-bottom: 4rem;
 }
-.info div{
+
+.info div {
     margin: 1rem;
 }
 
-.info div i{
-   margin-right: 1rem;
+.info div i {
+    margin-right: 1rem;
 }
 
 #klanten,
@@ -56,12 +57,17 @@ footer p {
     margin-top: -140px;
 }
 
-@media (max-width: 990px){
+@media (max-width: 990px) {
+
     #klanten,
     #wie_zijn_wij,
     #diensten,
     #contact {
         padding-top: 300px;
         margin-top: -300px;
+    }
+
+    #contact .row {
+        justify-content: center;
     }
 }
