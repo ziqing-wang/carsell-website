@@ -7,7 +7,7 @@ body {
   color: #5a5a5a;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -85,11 +85,12 @@ html{
   .featurette-heading {
     font-size: 50px;
   }
-  
+
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
   }
+
 }
