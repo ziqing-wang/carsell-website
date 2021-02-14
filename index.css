@@ -1,0 +1,71 @@
+.nav-item {
+    padding-right: 2rem;
+    font-size: 1.25rem;
+}
+
+.carousel-caption {
+    background-color: rgb(59, 58, 58);
+    opacity: 0.8;
+    padding: 0 2rem;
+}
+
+.nav-item a {
+    color: #1d5080 !important;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+}
+
+.nav-item a:hover {
+    color: #000 !important;
+}
+
+.titles {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #1d5080;
+}
+
+.nav-item a:hover {
+    color: #1d5080;
+}
+
+footer p {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: lightgray;
+    padding: 2rem;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.bottom div {
+    margin: 0 2rem;
+}
+
+.bottom div>i {
+    margin: 0 1rem;
+    min-width: 40px;
+}
+
+#klanten,
+#wie_zijn_wij,
+#diensten,
+#contact {
+    padding-top: 140px;
+    margin-top: -140px;
+}
+
+@media (max-width: 980px){
+    #klanten,
+    #wie_zijn_wij,
+    #diensten,
+    #contact {
+        padding-top: 300px;
+        margin-top: -300px;
+    }
+}
