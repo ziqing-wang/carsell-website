@@ -1,26 +1,4 @@
 import CAR_DATA from "./data.js";
-//import {gridViewCard} from "./cardsbuilder";
-const createBrandList = () => {
-
-    CAR_DATA.brands.forEach((brand) => {
-        //console.log(brand.alt);
-        //create new li item 
-        let newLi = document.createElement("LI");
-
-        newLi.setAttribute("class", "brand");
-        $('ul.car-brands').append(newLi);
-
-        //create new img and append to new li item
-        const baseSrc = "images/brands/";
-        let newImage = document.createElement("IMG");
-        newImage.setAttribute("src", baseSrc + brand.img_src);
-        newImage.setAttribute("alt", brand.alt);
-        newLi.append(newImage);
-    })
-
-}
-createBrandList();
-
 const gridViewCard = () => {
     CAR_DATA.new_arrived.forEach(car => {
         //1.create new div with class 'card' and id 
@@ -63,7 +41,7 @@ const gridViewCard = () => {
 
         //6. create span with text car.price, append to newPriceDiv
         let newPrice = document.createElement("SPAN");
-        let newPriceText = document.createTextNode("$ " + car.price);
+        let newPriceText = document.createTextNode(car.price);
         newPrice.append(newPriceText);
         newPriceDiv.append(newPrice);
 
@@ -76,4 +54,12 @@ const gridViewCard = () => {
         newPriceDiv.append(newButton);
     });
 }
-gridViewCard();
+
+const listViewCard = () => {
+    console.log("this is list view");
+}
+
+export {
+    gridViewCard,
+    listViewCard
+};

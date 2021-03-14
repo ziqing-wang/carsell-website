@@ -30,21 +30,28 @@ const CAR_DATA = {
         alt: "",
         title: "BMW 1 Serie 118d High Executive",
         description: "random text",
-        price: "$6666.666"
+        price: 22222
     }, {
         id: "bmw2",
         img_src: "bmw1-serie-118d.jpg",
         alt: "",
         title: "BMW 1 Serie 118d High Executive",
         description: "super fast",
-        price: "$6666.777"
+        price: 6666
     }, {
         id: "bmw3",
         img_src: "bmw1-serie-118d.jpg",
         alt: "",
         title: "BMW 1 Serie 118d High Executive",
         description: "polo1",
-        price: "$6666.888"
+        price: 88888
+    }, {
+        id: "bmw4",
+        img_src: "bmw1-serie-118d.jpg",
+        alt: "",
+        title: "BMW 1 Serie 118d High Executive",
+        description: "car4",
+        price: 55588
     }],
     ocassions: [{
         id: "bmw1",
@@ -52,21 +59,44 @@ const CAR_DATA = {
         alt: "",
         title: "BMW 1 Serie 118d High Executive",
         description: "random text",
-        price: "$6666.666"
+        uitvoering: "118d High Executive",
+        bouwjaar: "2013",
+        carroserrie: "vvv",
+        km: 162000,
+        price: 13000
     }, {
         id: "bmw2",
         img_src: "bmw1-serie-118d.jpg",
         alt: "",
         title: "BMW 1 Serie 118d High Executive",
         description: "random text",
-        price: "$6666.777"
+        uitvoering: "118d High Executive",
+        bouwjaar: "2013",
+        carroserrie: "vvv",
+        km: 524224,
+        price: 5522
     }, {
         id: "bmw3",
         img_src: "bmw1-serie-118d.jpg",
         alt: "",
         title: "BMW 1 Serie 118d High Executive",
-        description: "random text",
-        price: "$6666.888"
+        description: "Hatchback",
+        uitvoering: "118d High Executive",
+        bouwjaar: "2013",
+        carroserrie: "vvv",
+        km: 888664,
+        price: 55668
+    }, {
+        id: "bmw4",
+        img_src: "bmw1-serie-118d.jpg",
+        alt: "",
+        title: "BMW 1 Serie 118d High Executive",
+        description: "car4",
+        uitvoering: "118d High Executive",
+        bouwjaar: "2013",
+        carroserrie: "vvv",
+        km: 11125,
+        price: 14250
     }]
 }
 

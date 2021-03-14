@@ -1,5 +1,7 @@
 .navbar {
     padding: 0.5rem 10rem;
+    min-height: 80px;
+   
 }
 .nav-link{
     margin-right: 1rem;
@@ -13,12 +15,6 @@
 }
 @media screen and (max-width: 768px) {
     .navbar {
-        padding: 1rem 5rem;
-    }
-}
-
-@media screen and (max-width: 376px) {
-    .navbar {
-        padding: 0.5rem 2rem;
+        padding: 1rem;
     }
 }

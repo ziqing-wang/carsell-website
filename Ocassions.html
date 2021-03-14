@@ -69,7 +69,7 @@
         <!-- start of search-bar section -->
         <div class="bg-container">
             <div class="outer">
-                
+
                 <div class="search-bar-container">
                     <h1 class="bg-titles">Ocassions</h1>
                     <input class="search-bar" type="text" placeholder="Search for your ideal car ...">
@@ -78,64 +78,72 @@
             </div>
         </div>
         <!-- end of search-bar section -->
+        <div class="car-container">
 
-        <!-- start of select menus -->
-        <div id="select_filters">
-            <select name="brands" id="car_brands">
-                <option value="">Brand</option>
-                <option value="bmw">BMW</option>
-                <option value="volkswagen">Volkswagen</option>
-            </select>
 
-            <select name="color" id="car_color">
-                <option value="">Color</option>
-                <option value="white">White</option>
-                <option value="blue">Blue</option>
-                <option value="black">Black</option>
-            </select>
+            <!-- start of select menus -->
+            <div id="select_filters">
+                <select class="filter-option" name="brands" id="car_brands">
+                    <option value="">Brand</option>
+                    <option value="bmw">BMW</option>
+                    <option value="volkswagen">Volkswagen</option>
+                </select>
 
-            <select name="carroserie" id="car_carroserie">
-                <option value="">Carroserie</option>
-                <option value="hatchback">Hatchback</option>
-                <option value="others">Others</option>
-            </select>
+                <select class="filter-option" name="brandstof" id="car_brandstof">
+                    <option value="">Brandstof</option>
+                    <option value="diesel">Diesel</option>
+                </select>
 
-            <select class="filter-option" id="sort">
-                <option value="">Sorteer</option>
-                <option value="price-asc">Prijs laag-hoog</option>
-                <option value="price-desc">Prijs hoog-laag</option>
+                <select class="filter-option" name="carroserie" id="car_carroserie">
+                    <option value="">Carroserie</option>
+                    <option value="hatchback">Hatchback</option>
+                    <option value="others">Others</option>
+                </select>
 
-                <option value="construction_year-asc">Bouwjaar laag-hoog</option>
-                <option value="construction_year-desc">Bouwjaar hoog-laag</option>
+                <select class="filter-sorteer" id="sort">
+                    <option value="">Sorteer</option>
+                    <option value="price-asc">Prijs laag-hoog</option>
+                    <option value="price-desc">Prijs hoog-laag</option>
 
-                <option value="mileage-asc">Km laag-hoog</option>
-                <option value="mileage-desc">Km hoog-laag</option>
-            </select>
-        </div>
-        <!-- end of select menus -->
+                    <option value="construction_year-asc">Bouwjaar laag-hoog</option>
+                    <option value="construction_year-desc">Bouwjaar hoog-laag</option>
 
-        <!-- start of ocassions cards section -->
-        <section class="gray-bg-section">
-           
-            <div id="results">
-                <div class="cards">
-                    <!-- start of car 1 -->
-                    <div id="bmw1" class="card">
-                        <img class="card-img-top" src="images/ocassions/bmw1-serie-118d.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">BMW 1 Serie 118d High Executive</h5>
-                            <p class="card-text">Hatchback</p>
-                            <div class="price">
-                                <span>$6666.6</span>
-                                <a href="Details.html?bmw0" class="btn btn-dark">View More ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of car 1 -->
-                </div>
+                    <option value="mileage-asc">Km laag-hoog</option>
+                    <option value="mileage-desc">Km hoog-laag</option>
+                </select>
             </div>
-        </section>
-        <!-- end of ocassions cards section -->
+            <!-- end of select menus -->
+
+            <!-- start of grid or list section -->
+
+            <div class="view-types">
+                <h1>Ocassions</h1>
+                <div class="views">
+                    <div id="grid-view">
+                        <i class="fa fa-th-large"></i>
+                        <span>Grid</span>
+                    </div>
+                    <div id="list-view">
+                        <i class="fa fa-list"></i>
+                        <span>List</span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- start of  grid or list section -->
+
+            <!-- start of ocassions cards section -->
+            <section class="gray-bg-section">
+
+                <div id="results">
+                    <!-- grid view card -->
+                    <div class="cards"></div>
+                    <!-- list view card -->
+                    <div class="list-view-cards"></div>
+                    <!-- end of list view cards -->
+            </section>
+            <!-- end of ocassions cards section -->
+        </div>
     </main>
 
     <!-- FOOTER -->
@@ -169,8 +177,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    <script type="module" src="./js/home.js"></script>
-    <script src="./js/ocassions.js"></script>
+    <script type="module" src="./js/ocassions.js"></script>
 </body>
 
 </html>
