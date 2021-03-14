@@ -1,0 +1,55 @@
+/**footer**/
+.my-footer {
+    background-color: #000;
+    color: rgb(223, 223, 219);
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 10%;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li>a {
+    color: gray;
+}
+
+.footer-links li {
+    margin: 16px 0;
+}
+
+.footer-links li>a:hover {
+    color: beige;
+    text-decoration: none;
+}
+
+.about {
+    max-width: 320px;
+}
+
+.about p {
+    color: gray;
+}
+
+.social-media a {
+    color: beige;
+}
+
+.social-media a:hover {
+    color: beige;
+    opacity: 0.6;
+}
+
+.social-media .fa {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-right: 16px;
+}
+
+/**footer**/
+@media (max-width: 600px) {
+    .my-footer {
+        flex-direction: column;
+    }
+}

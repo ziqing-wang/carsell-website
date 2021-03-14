@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Home</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- Nav Bar -->
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+            <img id="brand-banner" src="images/brand.png" alt="brand-image" style="width: 120px; height: 50px;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ocassions.html">OCASSIONS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Service.html">SERVICE</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">CONTACT</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main role="main">
+        <!-- start of carouse section -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/car1.jpg" alt="autos">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="heading">
+                                <h1>Heading 1</h1>
+                                <p>Text 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/car3.jpg" alt="autos">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="heading">
+                                <h1>Heading 1</h1>
+                                <p>Text 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/car5.jpg" alt="autos">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="heading">
+                                <h1>Heading 1</h1>
+                                <p>Text 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- end of carouse section -->
+
+        <!-- start of brand section -->
+        <section id="car-brands">
+            <h2 class="section-titles">Brands We Have</h2>
+
+            <ul class="car-brands">
+                <li class="brand"><img src="images/brands/mazda.jpg" alt="Mazda"></li>
+            </ul>
+        </section>
+        <!-- end of brand section -->
+
+        <!-- start of ocassions cards section -->
+        <section class="gray-bg-section">
+            <div class="grid-view">
+                <h2 class="section-titles">New Arrived</h2>
+                <div class="cards">
+                    <!-- start of car 1 -->
+                    <div id="bmw1" class="card">
+                        <img class="card-img-top" src="images/ocassions/bmw1-serie-118d.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">BMW 1 Serie 118d High Executive</h5>
+                            <p class="card-text">Some description.</p>
+                            <div class="price">
+                                <span>$6666.6</span>
+                                <a href="Details.html?bmw0" class="btn btn-dark">View More ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of car 1 -->
+                </div>
+            </div>
+
+        </section>
+        <!-- end of ocassions cards section -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="my-footer">
+        <ul class="footer-links">
+            <h3>Useful Links</h3>
+            <li><a href="ocassions.html">Ocassions</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="about">
+            <h3>About the company</h3>
+            <p>Lorem ipsum dolor sit amet, Morbi lacinia fermentum dignissim. Vivamus rhoncus dui eget neque pretium
+                placerat. Vivamus vitae felis et urna elementum dignissim.</p>
+            <div class="social-media">
+                <a href=""><i class="fa fa-facebook-f"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-envelope"></i></a>
+                <a href=""><i class="fa fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script type="module" src="./js/home.js"></script>
+</body>
+
+</html>

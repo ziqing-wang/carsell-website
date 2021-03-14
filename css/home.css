@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+   
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* car brands list */
+.section-titles{
+    text-align: center;
+    margin: 2rem 0;
+}
+.car-brands {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 90%;
+    margin: 2em auto;
+    padding: 0;
+}
+
+.brand img {
+    max-width: 50px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.brand img:hover {
+    transform: scale(1.2);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+/* end of car brands list */
+
+/* start of new arrived section */
+.gray-bg-section{
+    background-color: rgb(250, 250, 250);
+    padding: 1rem 0;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 1rem auto;
+    width: 18rem;
+}
+.card-body .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-body .price span{
+    font-size: 16px;
+    font-weight: bold;
+}
+/* .card-body .price .btn-color{
+
+} */
+/* end of new arrived section */
+
+/* start of new arrived section */
+/* end of new arrived section */
