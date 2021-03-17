@@ -6,10 +6,12 @@ body {
     margin: 0;
     padding: 0;
 }
-.car-container{
+
+.car-container {
     width: 80%;
     margin: 0 auto;
 }
+
 /* start of background search bar */
 .bg-container {
     width: 100%;
@@ -70,7 +72,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 2rem 0 ;
+    margin: 2rem 0;
 }
 
 #select_filters select {
@@ -82,7 +84,7 @@ body {
 /* select menus */
 
 /* view types section */
-.view-types{
+.view-types {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
@@ -112,29 +114,25 @@ body {
 /* end of view types section */
 
 /* start of cards section */
-.cards {
-    display: flex;
+.ocassions-grid-cards-container {
+    flex-direction: row!important;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-.card {
-    margin: 1rem 0.5rem;
-    width: 20rem;
-    box-shadow: 2px 2px 10px #ddd;
+.ocassions-grid-card-view {
+    width: 21rem;
+    flex-direction: column;
+    margin: 1rem!important;
 }
-
-.price {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.ocassions-grid-card-view img{
+    width: 100%!important;
 }
-
-.price span {
-    font-size: 1.25rem;
-    font-weight: bold;
+.list-view-card.ocassions-grid-card-view .car-details{
+    width: 100%;
 }
-
+.ocassions-grid-card-view h2{
+    font-size: 1.5rem;
+}
 /* list view cards */
 .list-view-cards {
     display: flex;
@@ -158,6 +156,7 @@ body {
 }
 
 .list-view-card .car-details {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -174,29 +173,38 @@ td {
     padding-left: 1rem;
 }
 
-.car-details .price span {
-    font-size: 2rem;
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.price span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 
 /* end of list view cards */
 /* end of cards section */
 
-@media (max-width: 1024px) {
-    
+@media (max-width: 1440px) {
+
     .list-view-card {
-       margin: 1rem;
+        margin: 1rem;
     }
 
     .list-view-card img {
-        width: 100%;
+        width: 50%;
         margin: 0 0 1rem 0;
     }
 
     .list-view-card .car-details {
-        width: 100%;
+        width: 50%;
     }
 
-    h1,h2 {
+    h1,
+    h2 {
         font-size: 1.5rem;
     }
 
@@ -207,10 +215,12 @@ td {
         padding-left: 0;
     }
 }
+
 @media (max-width: 768px) {
-    .car-container{
+    .car-container {
         width: 100%;
     }
+
     .nav-link a {
         margin: 0 5px;
         letter-spacing: 0;
@@ -229,10 +239,10 @@ td {
     .search-bar-container .fa-search {
         right: -270px;
     }
+
     .list-view-card img {
         width: 100%;
-        margin-right: 1rem auto; 
+        margin-right: 1rem auto;
     }
-
+    
 }
-

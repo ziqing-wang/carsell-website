@@ -54,13 +54,13 @@ const CAR_DATA = {
         price: 55588
     }],
     ocassions: [{
-        id: "bmw1",
+        id: "9KRB05",
         img_src: "bmw1-serie-118d.jpg",
         alt: "",
         title: "BMW 1 Serie 118d High Executive",
         description: "random text",
         uitvoering: "118d High Executive",
-        bouwjaar: "2013",
+        bouwjaar: 1999,
         carroserrie: "vvv",
         km: 162000,
         price: 13000
@@ -71,7 +71,7 @@ const CAR_DATA = {
         title: "BMW 1 Serie 118d High Executive",
         description: "random text",
         uitvoering: "118d High Executive",
-        bouwjaar: "2013",
+        bouwjaar: 2011,
         carroserrie: "vvv",
         km: 524224,
         price: 5522
@@ -82,7 +82,7 @@ const CAR_DATA = {
         title: "BMW 1 Serie 118d High Executive",
         description: "Hatchback",
         uitvoering: "118d High Executive",
-        bouwjaar: "2013",
+        bouwjaar: 2015,
         carroserrie: "vvv",
         km: 888664,
         price: 55668
@@ -93,7 +93,7 @@ const CAR_DATA = {
         title: "BMW 1 Serie 118d High Executive",
         description: "car4",
         uitvoering: "118d High Executive",
-        bouwjaar: "2013",
+        bouwjaar: 2018,
         carroserrie: "vvv",
         km: 11125,
         price: 14250

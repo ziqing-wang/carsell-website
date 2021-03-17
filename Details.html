@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Home</title>
+    <title>Details</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
 
@@ -19,7 +19,7 @@
 
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600;700&display=swap" rel="stylesheet">
 
@@ -27,6 +27,7 @@
     <link href="css/carousel.css" rel="stylesheet">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/cardetails.css">
 
 </head>
 
@@ -42,11 +43,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="home.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Ocassions.html">OCASSIONS</a>
+                        <a class="nav-link active" href="Ocassions.html">OCASSIONS</a>
                     </li>
 
                     <li class="nav-item">
@@ -66,7 +67,13 @@
 
     <main role="main">
 
-        <h2 id="car_id"></h2>
+        <div id="car_info">
+            <!-- <div class="car-info">
+                <img src="images/ocassions/polo1.jpg" alt="">
+                <div class="details-table"></div>
+            </div> -->
+            
+        </div>
 
         <!-- start of car brands section -->
         <!-- end of car brands section -->
@@ -95,8 +102,7 @@
             </div>
         </div>
     </footer>
-
-
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
@@ -106,7 +112,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    <script src="./js/details.js"></script>
+    <script type="module" src="./js/details.js"></script>
 </body>
 
 </html>
