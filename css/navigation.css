@@ -1,18 +1,23 @@
+
 .navbar {
-    padding: 0.5rem 10rem;
+    padding: 0.5rem 8rem;
     min-height: 80px;
-   
+    box-shadow: 0 2px 4px #f0f0f0;
 }
-.nav-link{
+
+.nav-link {
     margin-right: 1rem;
 }
-.nav-item a{
+
+.nav-item a {
     letter-spacing: 3px;
 }
-.nav-item .nav-link{
+
+.nav-item .nav-link {
     color: black;
     font-weight: bold;
 }
+
 @media screen and (max-width: 768px) {
     .navbar {
         padding: 1rem;

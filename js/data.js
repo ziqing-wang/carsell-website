@@ -24,61 +24,69 @@ const CAR_DATA = {
             alt: "Polo"
         }
     ],
-    new_arrived: [{
-        id: "bmw1",
-        img_src: "bmw1-serie-118d.jpg",
-        alt: "",
-        title: "BMW 1 Serie 118d High Executive",
-        description: "random text",
-        price: 22222
-    }, {
-        id: "bmw2",
-        img_src: "bmw1-serie-118d.jpg",
-        alt: "",
-        title: "BMW 1 Serie 118d High Executive",
-        description: "super fast",
-        price: 6666
-    }, {
-        id: "bmw3",
-        img_src: "bmw1-serie-118d.jpg",
-        alt: "",
-        title: "BMW 1 Serie 118d High Executive",
-        description: "polo1",
-        price: 88888
-    }, {
-        id: "bmw4",
-        img_src: "bmw1-serie-118d.jpg",
-        alt: "",
-        title: "BMW 1 Serie 118d High Executive",
-        description: "car4",
-        price: 55588
-    }],
     ocassions: [{
         id: "9KRB05",
-        img_src: "bmw1-serie-118d.jpg",
-        alt: "",
+        status: "available",
+        imgs: [{
+            src: "03-19-2021-15_42_45_6_Eerste.jpg",
+            alt: "bmw1-serie-118d"
+        }, {
+            src: "03-19-2021-15_42_45_6_2.jpg",
+            alt: "bmw1-serie-118d"
+        }, {
+            src: "03-19-2021-15_42_45_6_3.jpg",
+            alt: "bmw1-serie-118d"
+        }, {
+            src: "03-19-2021-15_42_45_6_8.jpg",
+            alt: "bmw1-serie-118d"
+        }, {
+            src: "03-19-2021-15_42_45_6_7.jpg",
+            alt: "bmw1-serie-118d"
+        }, {
+            src: "03-19-2021-15_42_45_6_4.jpg",
+            alt: "bmw1-serie-118d"
+        }, {
+            src: "03-19-2021-15_42_45_6_5.jpg",
+            alt: "bmw1-serie-118d"
+        }, {
+            src: "03-19-2021-15_42_45_6_6.jpg",
+            alt: "bmw1-serie-118d"
+        }],
         title: "BMW 1 Serie 118d High Executive",
         description: "random text",
         uitvoering: "118d High Executive",
         bouwjaar: 1999,
-        carroserrie: "vvv",
+        carroserrie: "bbb",
         km: 162000,
         price: 13000
     }, {
         id: "bmw2",
-        img_src: "bmw1-serie-118d.jpg",
-        alt: "",
+        status: "verkocht",
+        imgs: [{
+            src: "bmw1-serie-118d.jpg",
+            alt: "",
+        }],
+
         title: "BMW 1 Serie 118d High Executive",
         description: "random text",
         uitvoering: "118d High Executive",
         bouwjaar: 2011,
-        carroserrie: "vvv",
+        carroserrie: "Hatchback",
         km: 524224,
         price: 5522
     }, {
         id: "bmw3",
-        img_src: "bmw1-serie-118d.jpg",
-        alt: "",
+        status: "available",
+        imgs: [{
+            src: "polo1.jpg",
+            alt: "",
+        },{
+            src: "bmw1-serie-118d.jpg",
+            alt: "",
+        }, {
+            src: "03-19-2021-17_43_34_50-RKP-8_Eerste.jpeg",
+            alt: "",
+        }],
         title: "BMW 1 Serie 118d High Executive",
         description: "Hatchback",
         uitvoering: "118d High Executive",
@@ -88,8 +96,11 @@ const CAR_DATA = {
         price: 55668
     }, {
         id: "bmw4",
-        img_src: "bmw1-serie-118d.jpg",
-        alt: "",
+        status: "available",
+        imgs: [{
+            src: "bmw1-serie-118d.jpg",
+            alt: "",
+        }],
         title: "BMW 1 Serie 118d High Executive",
         description: "car4",
         uitvoering: "118d High Executive",

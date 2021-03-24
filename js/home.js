@@ -17,24 +17,38 @@ const createBrandList = () => {
 }
 createBrandList();
 
-const cardBuilder = () => {
+function cardBuilder() {
     let gridCardStr = "";
-    CAR_DATA.new_arrived.forEach(car => {
-        gridCardStr = `
-        <div id=${car.id} class="card">
-            <img class="card-img-top" src="images/ocassions/${car.img_src}" alt=${car.alt}>
-            <div class="card-body">
-                <h5 class="card-title">${car.title}</h5>
-                <p class="card-text">${car.description}</p>
-                <div class="price">
-                    <span>$ ${car.price}</span>
-                    <a href="Details.html?${car.id}" class="btn btn-dark">View More &gt;</a>
+    let carStatus = "";
+    const carArr = CAR_DATA.ocassions;
+    //get the first 3/4 cars from all ocassions
+    for (let i = 0; i < 3; i++) {
+
+        if (carArr[i].status === "available") {
+            carStatus = `
+                    <div class="price">
+                            <span>$ ${carArr[i].price}</span>
+                            <a href="details.html?id=${carArr[i].id}" class="btn view-btn">Bekijk ocassion</a>
+                    </div>
                 </div>
             </div>
-        </div>
+            `
+        } else {
+            carStatus = `
+                    <h3 style="color: #e43f3f">Verkocht</h3>
+                </div>
+            </div>
+            `
+        }
+
+        gridCardStr = `
+        <div id=${carArr[i].id} class="card">
+            <img class="card-img-top" src="images/ocassions/${carArr[i].imgs[0].src}" alt=${carArr[i].imgs[0].alt}>
+            <div class="card-body">
+                <h5 class="card-title">${carArr[i].title}</h5>
         `;
-       
-        $(".cards").append(gridCardStr);
-    });
+        $(".cards").append(gridCardStr + carStatus);
+    }
 }
 cardBuilder();
+

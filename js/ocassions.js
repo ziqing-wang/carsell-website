@@ -20,11 +20,6 @@ $("#search-btn").on("click", function () {
     $(window).scrollTop(resultTop);
 });
 
-//when click the image, go to the details page 
-$('.btn.btn-dark').on("click", function () {
-    //pass the id value to the details page
-    window.document.location = './details.html' + '?id=' + this.id;
-});
 
 //select menu filters 
 $("#select_filters select.filter-option").on("change", function () {
@@ -102,10 +97,25 @@ function cloneArray(orgArr) {
 //build list view cards
 function initListViewCardHTML(resource) {
     let listViewCardStr = "";
+    let carStatus = "";
     resource.forEach((car) => {
+        //check  if the car is sold out
+        if (isAvailable(car.status)) {
+            carStatus = ` 
+                <div class="price">
+                    <span>€ ${car.price}</span>
+                    <a href="details.html?id=${car.id}" class="btn view-btn">Bekijk ocassion</a>
+                </div>
+                </div>
+            </div>`
+        } else {
+            carStatus = `<h3 style="color: #e43f3f">Verkocht</h3>
+                </div>
+            </div>`
+        }
         listViewCardStr = `
         <div class="list-view-card" id=${car.id}>
-            <img src="images/ocassions/${car.img_src}" alt=${car.alt}>
+            <img src="images/ocassions/${car.imgs[0].src}" alt=${car.imgs[0].alt}>
             <div class="car-details">
                 <h2>${car.title}</h2>
                 <div class="car-details-table">
@@ -128,19 +138,22 @@ function initListViewCardHTML(resource) {
                         </tr>
                     </table>
                 </div>
-                <div class="price">
-                    <span>$ ${car.price}</span>
-                    <a href="Details.html?id=${car.id}" class="btn btn-dark">View More &gt;</a>
-                </div>
-            </div>
-        </div>
+
+           
         `;
 
-        $('.list-view-cards').append(listViewCardStr);
+        $('.list-view-cards').append(listViewCardStr + carStatus);
 
     });
 };
 
+function isAvailable(str) {
+    if (str === "available") {
+        return true;
+    } else {
+        return false;
+    }
+}
 //*****************end of build list view card ************************* */
 
 //when click on grid or list view button, toggle grid and list view

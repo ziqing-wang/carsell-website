@@ -49,30 +49,54 @@ body {
 .cards {
     display: flex;
     flex-wrap: wrap;
-
+    margin-left: 2rem;
 }
 
 .card {
-    margin: 1rem auto;
-    width: 18rem;
-    box-shadow: 2px 2px 10px #ddd;
+    margin: 1rem;
+    width: 21rem;
+    transition: all 0.3s ease;
 }
-
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px #b6b6b6;
+}
+.card-img-top{
+    height: 60%;
+}
 .card-body .price {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+.card-title{
+    color: #004687;
+}
 .card-body .price span {
-    font-size: 16px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #b81d18 ;
+}
+.view-btn{
+    background-color: #202020;
+    color: #f0f0f0;
     font-weight: bold;
 }
-
-/* .card-body .price .btn-color{
-
-} */
+.view-btn:hover{
+    background-color: #b81d18;
+    color: white;
+}
 /* end of new arrived section */
 
 /* start of new arrived section */
 /* end of new arrived section */
+@media (max-width:768px){
+    .cards {
+        margin-left: 1rem;
+    }
+}
+@media (max-width:376px){
+    .cards {
+        margin: auto;
+    }
+}

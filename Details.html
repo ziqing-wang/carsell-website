@@ -20,13 +20,11 @@
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600;700&display=swap" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/cardetails.css">
 
 </head>
@@ -47,37 +45,65 @@
                         <a class="nav-link" href="home.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="Ocassions.html">OCASSIONS</a>
+                        <a class="nav-link active" href="ocassions.html">OCASSIONS</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="Service.html">SERVICE</a>
+                        <a class="nav-link" href="inkoop.html">INKOOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">DIENSTEN</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">CONTACT</a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
                     </li>
                 </ul>
 
             </div>
         </nav>
-
-
     </header>
 
     <main role="main">
+        <div class="car-info-container">
 
-        <div id="car_info">
-            <!-- <div class="car-info">
-                <img src="images/ocassions/polo1.jpg" alt="">
-                <div class="details-table"></div>
-            </div> -->
-            
+            <div class="gallery-container">
+                <div class="full-img">
+                    <i id="prevBtn" class="fa fa-angle-left"></i>
+                    <i id="nextBtn" class="fa fa-angle-right"></i>
+                    <!-- <img id="displayed-img" alt='' src=""> -->
+                </div>
+                <div id="slideshow">
+                    <!-- <a href="#">
+                        <figure>
+                            <img src="" data-index="9" alt="">
+                        </figure>
+                    </a> -->
+
+                </div>
+            </div>
+
+            <!-- car-info table -->
+            <div class="brief-info-table">
+                <h2>Car Title</h2>
+                <div class="email">
+                    <button id="email-button" type="button"><i class="fas fa-envelope"></i> Email</button>
+                </div>
+                <p class="text-danger"></p>
+                <table class="car-details-table">
+                    <tr>
+                        <th>Prijs</th>
+                        <td>Є12.750,00</td>
+                    </tr>
+                    
+                </table>
+                <a href="#spec">+ Meer Specificaties</a>
+
+
+
+
+            </div>
         </div>
-
-        <!-- start of car brands section -->
-        <!-- end of car brands section -->
-
         <!-- start of ocassions cards section -->
         <!-- end of ocassions cards section -->
     </main>
@@ -102,7 +128,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>

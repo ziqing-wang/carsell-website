@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.search-container {
+    position: relative;
+    top: 100px;
+}
+
+.search-container input,
+button {
+    padding: 5px;
+}
+
+.serach-bar {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/* search result */
+.search-result {
+    border: 2px solid #f0f0f0;
+}
+
+.car-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.car-details .col-div {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    width: 25%;
+}
+
+@media screen and (max-width:768px) {
+    .car-details .col-div {
+        width: 40%;
+    }
+    .serach-bar{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .car-details .col-div {
+        width: 90%;
+    }
+}

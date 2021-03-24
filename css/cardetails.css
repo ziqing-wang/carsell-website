@@ -7,13 +7,9 @@ body {
     padding: 0;
 }
 
-#car_info {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 100px;
-}
-
-#car_info img {
-    width: 18rem;
+.car-info-container {
+    margin: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
